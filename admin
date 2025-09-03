@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "posts"
+    label: "Post"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Immagine di copertina", name: "thumbnail", widget: "image" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pagine"
+    files:
+      - label: "Chi siamo"
+        name: "about"
+        file: "about.html"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gipsies Go Wild CMS</title>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
