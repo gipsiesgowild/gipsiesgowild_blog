@@ -1,9 +1,9 @@
 backend:
-  name: auth0
-  domain: dev-ff4jmdn5padvr5l0.us.auth0.com
-  client_id: Esiil1qUDjYYl84wzyVReEqL6NuFXsUe
+  name: github
   repo: gipsiesgowild/gipsiesgowild_blog
   branch: main
+  auth_type: implicit
+  client_id: Ov23cte1npYPeD826xYY
 
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
